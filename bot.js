@@ -81,13 +81,13 @@ client.on("guildMemberAdd", member => {
                      ctx.fontSize = '20px';
                      ctx.fillStyle = "#f1f1f1";
                      ctx.textAlign = "center";
-                     ctx.fillText(`Welcome To ${member.guild.name}`, 300, 130);
+                     ctx.fillText(``, 300, 130);
                     
                      ctx.font = "bold 12px Arial";
                      ctx.fontSize = '20px';
                      ctx.fillStyle = "#f1f1f1";
                      ctx.textAlign = "center";
-                     ctx.fillText(member.user.username, 200, 150);
+                     ctx.fillText(member.user.username, 600, 280);
 
              let Avatar = Canvas.Image;
                            let ava = new Avatar;
@@ -96,7 +96,7 @@ client.on("guildMemberAdd", member => {
                            ctx.arc(77, 101, 62, 0, Math.PI*2);
                            ctx.stroke();
                               ctx.clip();
-                              ctx.drawImage(ava, 13, 38, 128, 126);  
+                              ctx.drawImage(ava, 42, 64, 345, 345);  
                       
             
          
