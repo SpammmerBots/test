@@ -1,17 +1,37 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
-const convert = require("hh-mm-ss")
-const dateFormat = require('dateformat');
-const fs = require('fs');
-const pretty = require('pretty-ms');
-const rn = require('random-number');
+const tpoints = {};
+const vpoints = {};
+const jimp = require("jimp");
 const moment = require('moment');
-const Canvas = require('canvas')
-const jimp = require('jimp')
-const sql = require('sqlite')
-const ytdl = require("ytdl-core");
-const prefix = "p";
-let done = {};
+const Canvas = require("canvas");
+const fs = require('fs');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+ client.user.setActivity("",{type: 'watching'})
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
+});
 
 
 
